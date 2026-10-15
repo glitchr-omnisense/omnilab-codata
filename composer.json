@@ -1,0 +1,45 @@
+{
+    "name": "omnilab/codata",
+    "type": "library",
+    "description": "Omnilab CODATA: the fundamental physical constants of CODATA as NIST publishes them (2022 adjustment) - each constant by NIST's short name (mp, c) or its name, its value, standard uncertainty and unit, whether exact, its value as published; a search; two calls in all, no key.",
+    "keywords": [
+        "science",
+        "physics",
+        "codata",
+        "nist",
+        "physical constants",
+        "units",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\Codata\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\Codata\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
