@@ -17,7 +17,7 @@ use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
 /**
- * Fixtures recorded from physics.nist.gov on 2026-10-16: the text table
+ * Fixtures recorded from physics.nist.gov on 2026-10-15: the text table
  * of the 2022 CODATA values (355 constants) and NIST's list of every
  * constant with its short name.
  */

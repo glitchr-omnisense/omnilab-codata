@@ -17,7 +17,7 @@ $codata = (new CodataSourceFactory($httpClient))->create(['mailto' => 'support@g
 A constant is named in the core's `codata` scheme by NIST's short name, case kept (`mp`, `c`,
 `bg`, `Kj`), as its page `physics.nist.gov/cgi-bin/cuu/Value?mp` names it; read from
 `codata:mp` and from that page. Wikidata keeps these names in P1645 ("NIST/CODATA ID", on 70
-items on 2026-10-16), which omnilab/wikidata does not read yet: no `Collector` path leads here.
+items on 2026-10-15), which omnilab/wikidata does not read yet: no `Collector` path leads here.
 
 ## Which files
 
@@ -54,7 +54,7 @@ offset, with a total.
 
 ## Verified, and not
 
-Against the real service on 2026-10-16: both files (355 constants, the 2022 adjustment; 40.8 and
+Against the real service on 2026-10-15: both files (355 constants, the 2022 adjustment; 40.8 and
 38.8 kB, under a second each); the proton mass, the speed of light, the Planck constant, the
 Newtonian constant of gravitation, every line of the table matched to its short name. The fixtures
 in `Tests/Fixtures/` are those two files.
