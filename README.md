@@ -1,7 +1,7 @@
 # omnilab/codata
 
 The fundamental physical constants of CODATA, as NIST publishes them, for
-[glitchr/omnilab](https://github.com/glitchr-studio/omnilab): each constant an entity - the proton
+[omniscient/omnilab](https://github.com/glitchr-studio/omnilab): each constant an entity - the proton
 mass, the speed of light in vacuum, the Newtonian constant of gravitation... 355 of the 2022
 adjustment - by NIST's short name (`mp`, `c`, `bg`) or its name, with its value, standard
 uncertainty and unit (a `Quantity`), whether it is exact, the value as NIST writes it, the
