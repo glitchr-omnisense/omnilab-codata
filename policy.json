@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "codata",
+    "rateLimits": null,
+    "concurrency": null,
+    "rights": {
+        "commercial": "unknown",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "unknown",
+            "maxTtl": null
+        },
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {
+            "required": false,
+            "text": "NIST Standard Reference Database 121, CODATA Internationally Recommended Values of the Fundamental Physical Constants",
+            "url": "https://physics.nist.gov/cuu/Constants/index.html",
+            "where": [
+                "source"
+            ]
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+        "policy": "https://physics.nist.gov/cuu/Constants/index.html",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "Read 2026-11-10: the Constants index (SRD 121, links to the NIST database disclaimer and bibliography, no rate or terms), the NIST database disclaimer (no warranty), and NIST's copyright statement for SRD: Standard Reference Data may be copyrighted by the Secretary of Commerce under 15 U.S.C. 290e, licensing information at nist.gov/srd; nothing there states SRD 121's terms, so rights stay unknown (it is not plain 17 U.S.C. 105 public domain). NIST's general site policy says public information may be distributed or copied and asks for credit. No rate published."
+    }
+}
