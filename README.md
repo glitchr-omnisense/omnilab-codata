@@ -29,6 +29,34 @@ omnilab:
 A constant is of `Domain::OTHER`: the core has no physics domain (its domains are chemistry,
 biology, taxonomy, astronomy, earth), and none was added for this package.
 
+## Install and a first call
+
+```sh
+composer require omnilab/codata
+```
+
+A real call, with no account and no key: the proton mass as NIST publishes it. `mailto` is your
+address, sent in the User-Agent so that the service can reach you before it blocks a caller; the
+source keeps to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\Codata\CodataSourceFactory;
+
+$codata = (new CodataSourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+$mp = $codata->entity('mp');
+echo $mp->label, ' = ', $mp->property('value'), "\n";
+```
+
+Its output on 2026-11-13:
+
+```
+proton mass = 1.67262192595e-27 ± 0.00000000052e-27 kg
+```
+
 ## Terms of use
 
 NIST Standard Reference Database 121, "CODATA Internationally recommended 2022 values of the
